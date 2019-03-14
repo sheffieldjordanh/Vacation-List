@@ -15,7 +15,7 @@ function printItem(item){
 	p.innerHTML = item.text
 	p.className = item.style
 	p.onclick = function(){
-		this.className = item.style = (this.className=="none")? "stike" : "invisible"
+		this.className = item.style = (this.className=="none")? "strike" : "invisible"
 		localStorage.setItem("myData", JSON.stringify(myList))
 	}
 	document.getElementById("myDiv").appendChild(p)
